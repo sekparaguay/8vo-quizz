@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Indica que el contenido de la página está en español -->
+<head>
+  <meta charset="UTF-8"> <!-- Permite usar caracteres especiales como ñ y tildes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsiva -->
+  <title>📝Quiz - Museum of the Mind</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS externo -->
+</head>
+
+<body>
+
+  <!-- ===== HEADER CON LOGO ===== -->
+  <header> <!--header: Barra superior de la página donde va el logo-->
+    <img src="logo.png" alt="Logo Museum" class="logo" /> 
+    <!-- 
+      <img>: etiqueta para mostrar imágenes
+      src: indica la ruta de la imagen (logo.png)
+      alt: texto alternativo si no se carga la imagen
+      class="logo": clase CSS para aplicar estilos específicos
+    -->
+  </header> <!-- Fin del header -->
+
+  <!-- ===== CONTENEDOR DEL QUIZ ===== -->
+  <div class="quiz-container"> <!--Contenedor del quiz completo-->
+    <h1>🧠 𝚀𝚞𝚒𝚣-𝙼𝚞𝚜𝚎𝚞𝚖  𝚘𝚏  𝚝𝚑𝚎  𝙼𝚒𝚗𝚍</h1> <!-- Título del quiz -->
+    <div id="quiz"></div> <!-- Contenedor donde se mostrarán las preguntas -->
+    <div id="result"></div> <!-- Aquí se mostrará el puntaje final -->
+
+    <button id="retry-btn" onclick="reiniciarQuiz()" style="display:none;">
+      Volver a intentar
+    </button> <!-- Botón para reiniciar el quiz -->
+
+    <div id="qrcode"></div> <!-- Contenedor donde se genera el código QR -->
+    <div>Escanea este código QR para acceder al quiz desde tu móvil</div>
+  </div>
+
+  <!-- ===== LIBRERÍA PARA GENERAR QR ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <!-- ===== ARCHIVO DE JAVASCRIPT ===== -->
+  <script src="script.js"></script>
+
+</body>
+</html>

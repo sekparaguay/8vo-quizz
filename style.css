@@ -1,0 +1,109 @@
+/* ===== ESTILO GENERAL ===== */
+body { 
+  font-family: Arial, sans-serif; 
+  background: #d8f2f8; 
+  color: #222658; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  margin: 0; 
+}
+
+header { 
+  width: 100%; 
+  background: #d8f2f8; 
+  padding: 10px 20px; 
+  display: flex; 
+  align-items: center; 
+}
+
+.logo { 
+  height: 100px; 
+  object-fit: contain; 
+  margin-right: auto; 
+}
+
+/* ===== CONTENEDOR DEL QUIZ ===== */
+.quiz-container { 
+  background: #d8f2f8; 
+  width: 90%; 
+  max-width: 400px; 
+  margin: 30px; 
+  padding: 20px; 
+  border-radius: 15px; 
+  text-align: center; 
+}
+
+.question { 
+  font-size: 1.2rem; 
+  margin: 20px 0; 
+}
+
+/* ===== ESTILO DE BOTONES ===== */
+button { 
+  width: 100%; 
+  padding: 10px; 
+  margin: 5px 0; 
+  cursor: pointer; 
+}
+
+.correct { 
+  background-color: green; 
+  color: rgb(208, 200, 200); 
+}
+
+.wrong { 
+  background-color: red; 
+  color: rgb(212, 207, 207); 
+}
+
+/* ===== ESTILO DEL QR ===== */
+#qrcode { 
+  margin: 20px auto; 
+  width: 120px;
+  height: 120px;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* ===== TABLET ===== */
+@media (max-width: 768px) {
+  .quiz-container {
+    width: 80%; /* Más ancho en tablet */
+    padding: 15px;
+  }
+
+  .logo {
+    height: 80px; /* Reducir tamaño del logo */
+  }
+
+  .question {
+    font-size: 1.1rem;
+  }
+}
+
+/* ===== MÓVIL ===== */
+@media (max-width: 480px) {
+  .quiz-container {
+    width: 95%; /* Ocupa casi todo el ancho */
+    padding: 10px;
+  }
+
+  .logo {
+    height: 60px; /* Logo más pequeño */
+  }
+
+  .question {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 16px; /* Botones más grandes para tocar */
+    padding: 12px;
+  }
+
+  #qrcode {
+    width: 100px;
+    height: 100px;
+  }
+}
